@@ -38,6 +38,7 @@ public class MOduleClassName extends BaseClass {
 		Assert.assertEquals(pagetitle, ExpectedResult);
 		System.out.println("TestCase result :" + pagetitle);
 		System.out.println("new statement");
+		System.out.println("new statement: verify steps");
 
 	}
 
