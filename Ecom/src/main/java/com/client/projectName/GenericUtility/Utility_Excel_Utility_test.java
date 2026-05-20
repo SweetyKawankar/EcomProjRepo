@@ -11,14 +11,14 @@ public class Utility_Excel_Utility_test {
 	
  public String getDataFromExcel(String sh, int row, int cell) throws EncryptedDocumentException, IOException {
 	 
-	 FileInputStream fis = new FileInputStream("./Test_Data/Project_Data_Amazon.xlsx.ods");
+	 FileInputStream fis = new FileInputStream("./Test_Data/Project_Data_Amazon.xlsx");
 		
 	 Workbook wb = WorkbookFactory.create(fis);
 
 	 String data = wb.getSheet(sh).getRow(row).getCell(cell).toString();
 		
 	 wb.close();
-	return sh;
+	return data;
 	
 }
 }

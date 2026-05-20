@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.client.projectName.SomkeTest.MOduleClassName">
+      <class name="com.client.projectName.SomkeTest.Serach_Module_Test">
         <methods>
-          <include name="Homepage"/>
           <include name="configBC"/>
           <include name="configBS"/>
           <include name="configAC"/>
           <include name="configAS"/>
+          <include name="Verify_product_detail"/>
           <include name="configBM"/>
           <include name="configAM"/>
         </methods>
-      </class> <!-- com.client.projectName.SomkeTest.MOduleClassName -->
+      </class> <!-- com.client.projectName.SomkeTest.Serach_Module_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
