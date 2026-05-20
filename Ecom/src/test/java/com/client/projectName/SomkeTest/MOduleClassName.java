@@ -39,6 +39,7 @@ public class MOduleClassName extends BaseClass {
 		System.out.println("TestCase result :" + pagetitle);
 		System.out.println("new statement");
 		System.out.println("new statement: verify steps");
+		System.out.println("new statement2");
 
 	}
 
