@@ -15,18 +15,6 @@ public class HomePage {
 
 	}
 
-	@FindBy(id = "nav-link-accountList")
-	private WebElement account_list_options;
-
-	@FindBy(xpath = "//span[text()='Sign Out']")
-	private WebElement signout;
-
-	public WebElement getAccount_list_options() {
-		return account_list_options;
-	}
-
-	public WebElement getSignout() {
-		return signout;
-	}
+	
 
 }
