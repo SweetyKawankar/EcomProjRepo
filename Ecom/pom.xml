@@ -1,10 +1,12 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>ClientName</groupId>
-  <artifactId>Ecom</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
-  <dependencies>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>ClientName</groupId>
+	<artifactId>Ecom</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<dependencies>
 		<!-- Source:
 		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
@@ -22,7 +24,6 @@
 
 		</dependency>
 
-	
 
 		<!-- Source: https://mvnrepository.com/artifact/org.apache.poi/poi -->
 		<dependency>
@@ -36,9 +37,6 @@
 			<artifactId>poi-ooxml</artifactId>
 			<version>5.5.1</version>
 		</dependency>
-		
-		
-
 
 
 	</dependencies>

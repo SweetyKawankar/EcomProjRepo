@@ -15,18 +15,34 @@ public class HomePage {
 
 	}
 
-	@FindBy(id = "nav-link-accountList")
-	private WebElement account_list_options;
+	@FindBy(id = "twotabsearchtextbox")
+	private WebElement serachfield;
 
-	@FindBy(xpath = "//span[text()='Sign Out']")
-	private WebElement signout;
+	@FindBy(id = "nav-search-submit-button")
+	private WebElement serach_btn;
+	
+	@FindBy(xpath = "(//span[contains(@class,'a-size-medium')])[1]")
+	private WebElement firstproduct_book;
 
-	public WebElement getAccount_list_options() {
-		return account_list_options;
+	@FindBy(xpath = "//span[text()='The Monk Who Sold His Ferrari']")
+	private WebElement product_book;
+	
+	
+
+	public WebElement getProduct_book() {
+		return product_book;
+	}
+	
+	public WebElement getFirstproduct_book() {
+		return firstproduct_book;
 	}
 
-	public WebElement getSignout() {
-		return signout;
+	public WebElement getSerachfield() {
+		return serachfield;
+	}
+
+	public WebElement getSerach_btn() {
+		return serach_btn;
 	}
 
 }

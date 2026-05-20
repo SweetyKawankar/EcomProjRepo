@@ -14,6 +14,8 @@ public class LoginPage {
 		PageFactory.initElements(driver, this);
 
 	}
+	@FindBy(xpath  = "//span[contains(text(),'Account & Lists')]")
+	private WebElement account_list_options;
 
 	@FindBy(id = "ap_email_login")
 	private WebElement Enter_mobilenumber_or_email;
@@ -24,8 +26,31 @@ public class LoginPage {
 	@FindBy(id = "ap_password")
 	private WebElement password;
 
-	@FindBy(id = "signInSubmit'")
+	@FindBy(id = "signInSubmit")
 	private WebElement signInBTN;
+	
+//	@FindBy(xpath = "//span[text()='Sign Out']")
+//	private WebElement signout1;
+	
+	@FindBy(id = "nav-item-signout")
+	private WebElement signout2;
+
+
+//	public WebElement getSignout1() {
+//		return signout1;
+//	}
+	
+	public WebElement getSignout2() {
+		return signout2;
+	}
+	
+	public WebElement getAccount_list_options() {
+		return account_list_options;
+	}
+
+	public void setAccount_list_options(WebElement account_list_options) {
+		this.account_list_options = account_list_options;
+	}
 
 	public WebElement getEnter_mobilenumber_or_email() {
 		return Enter_mobilenumber_or_email;
