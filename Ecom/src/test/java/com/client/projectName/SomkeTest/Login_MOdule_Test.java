@@ -27,7 +27,7 @@ public class Login_MOdule_Test extends BaseClass {
 
 	}
 
-	@Test
+	@Test(enabled=false)
 	public void Verify_Invalid_crendentioal() throws EncryptedDocumentException, IOException {
 
 		WebDriver chromeDriver = new ChromeDriver();

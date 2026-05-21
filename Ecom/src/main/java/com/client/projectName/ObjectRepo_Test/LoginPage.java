@@ -29,16 +29,16 @@ public class LoginPage {
 	@FindBy(id = "signInSubmit")
 	private WebElement signInBTN;
 	
-//	@FindBy(xpath = "//span[text()='Sign Out']")
-//	private WebElement signout1;
+	@FindBy(xpath = "//span[text()='Sign Out']")
+	private WebElement signout1;
 	
 	@FindBy(id = "nav-item-signout")
 	private WebElement signout2;
 
 
-//	public WebElement getSignout1() {
-//		return signout1;
-//	}
+	public WebElement getSignout1() {
+		return signout1;
+	}
 	
 	public WebElement getSignout2() {
 		return signout2;
