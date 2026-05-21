@@ -5,11 +5,11 @@
     <classes>
       <class name="com.client.projectName.SomkeTest.Serach_Module_Test">
         <methods>
+          <include name="Verify_add_to_cart_button"/>
           <include name="configBC"/>
           <include name="configBS"/>
           <include name="configAC"/>
           <include name="configAS"/>
-          <include name="Verify_product_detail"/>
           <include name="configBM"/>
           <include name="configAM"/>
         </methods>
