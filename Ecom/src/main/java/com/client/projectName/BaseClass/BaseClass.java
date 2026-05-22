@@ -1,6 +1,7 @@
 package com.client.projectName.BaseClass;
 
 import java.io.IOException;
+import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,12 +16,14 @@ import org.testng.annotations.BeforeSuite;
 
 import com.client.projectName.GenericUtility.Utility_Excel_Utility_test;
 import com.client.projectName.GenericUtility.Utility_File_Utility_test;
+import com.client.projectName.GenericUtility.Utility_WebDriver_Utility_test;
 import com.client.projectName.ObjectRepo_Test.HomePage;
 import com.client.projectName.ObjectRepo_Test.LoginPage;
 
 public class BaseClass {
 	public Utility_File_Utility_test fLib = new Utility_File_Utility_test();
 	public Utility_Excel_Utility_test ELib = new Utility_Excel_Utility_test();
+	public Utility_WebDriver_Utility_test WLib = new Utility_WebDriver_Utility_test();
 	public WebDriver driver = null;
 
 	@BeforeSuite
@@ -50,13 +53,18 @@ public class BaseClass {
 	public void configBM() throws IOException {
 
 		System.out.println("=====Login to Page=======");
+		WLib.waitForPageToLoad(driver);
 		LoginPage lp = new LoginPage(driver);
-
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+		
 		String BROWSER = fLib.getDataFromPropertiesFile("browser");
 		String URL = fLib.getDataFromPropertiesFile("url");
-		String USER_Details = fLib.getDataFromPropertiesFile("username");
+		String USER_Details = fLib.getDataFromPropertiesFile("EnterMobileNumber");
 		String PASSWORD = fLib.getDataFromPropertiesFile("password");
 		driver.get(URL);
+
+		lp.getAccount_list_options().click();
+
 		lp.getEnter_mobilenumber_or_email().sendKeys(USER_Details);
 		lp.getContinue_BTN().click();
 		lp.getPassword().sendKeys(PASSWORD);
@@ -65,10 +73,17 @@ public class BaseClass {
 	}
 
 	@AfterMethod
-	public void configAM() {
+	public void configAM() throws InterruptedException {
 		System.out.println("=====Logout to Page=======");
-		HomePage hp = new HomePage(driver);
-		hp.getSignout().click();
+		WLib.waitForPageToLoad(driver);
+//		HomePage hp = new HomePage(driver);
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+		LoginPage lp = new LoginPage(driver);
+		WLib.mousemoveonElement(driver, lp.getAccount_list_options());
+//		lp.getAccount_list_options().click();
+		WLib.mousemoveonElement(driver, lp.getSignout2());
+		
+		lp.getSignout2().click();
 
 	}
 

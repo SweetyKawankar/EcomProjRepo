@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-21T13:10:29 IST" name="Default suite" finished-at="2026-05-21T13:12:09 IST" duration-ms="99669">
+    <groups>
+    </groups>
+    <test started-at="2026-05-21T13:10:29 IST" name="Default test" finished-at="2026-05-21T13:12:09 IST" duration-ms="99669">
+      <class name="com.client.projectName.SomkeTest.Serach_Module_Test">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:com.client.projectName.SomkeTest.Serach_Module_Test@233795b6]" started-at="2026-05-21T13:10:29 IST" name="configBS" finished-at="2026-05-21T13:10:29 IST" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.client.projectName.SomkeTest.Serach_Module_Test@233795b6]" started-at="2026-05-21T13:10:29 IST" name="configBC" finished-at="2026-05-21T13:10:33 IST" duration-ms="3525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.client.projectName.SomkeTest.Serach_Module_Test@233795b6]" started-at="2026-05-21T13:10:33 IST" name="configBM" finished-at="2026-05-21T13:10:49 IST" duration-ms="16451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="Verify_add_to_cart_button()[pri:0, instance:com.client.projectName.SomkeTest.Serach_Module_Test@233795b6]" started-at="2026-05-21T13:10:49 IST" name="Verify_add_to_cart_button" finished-at="2026-05-21T13:11:01 IST" duration-ms="11979" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [11] but found [14]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [11] but found [14]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.client.projectName.SomkeTest.Serach_Module_Test.Verify_add_to_cart_button(Serach_Module_Test.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_add_to_cart_button -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.client.projectName.SomkeTest.Serach_Module_Test@233795b6]" started-at="2026-05-21T13:11:01 IST" name="configAM" finished-at="2026-05-21T13:11:05 IST" duration-ms="3905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.client.projectName.SomkeTest.Serach_Module_Test@233795b6]" started-at="2026-05-21T13:11:05 IST" name="configBM" finished-at="2026-05-21T13:11:15 IST" duration-ms="10223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="Verify_cart_page()[pri:0, instance:com.client.projectName.SomkeTest.Serach_Module_Test@233795b6]" started-at="2026-05-21T13:11:15 IST" name="Verify_cart_page" finished-at="2026-05-21T13:11:19 IST" duration-ms="3953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_cart_page -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.client.projectName.SomkeTest.Serach_Module_Test@233795b6]" started-at="2026-05-21T13:11:19 IST" name="configAM" finished-at="2026-05-21T13:11:22 IST" duration-ms="3341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.client.projectName.SomkeTest.Serach_Module_Test@233795b6]" started-at="2026-05-21T13:11:22 IST" name="configBM" finished-at="2026-05-21T13:11:33 IST" duration-ms="10296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="Verify_product_detail()[pri:0, instance:com.client.projectName.SomkeTest.Serach_Module_Test@233795b6]" started-at="2026-05-21T13:11:33 IST" name="Verify_product_detail" finished-at="2026-05-21T13:11:40 IST" duration-ms="7318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_product_detail -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.client.projectName.SomkeTest.Serach_Module_Test@233795b6]" started-at="2026-05-21T13:11:40 IST" name="configAM" finished-at="2026-05-21T13:11:46 IST" duration-ms="6322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.client.projectName.SomkeTest.Serach_Module_Test@233795b6]" started-at="2026-05-21T13:11:46 IST" name="configBM" finished-at="2026-05-21T13:11:56 IST" duration-ms="9580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="Verify_search_functionality()[pri:0, instance:com.client.projectName.SomkeTest.Serach_Module_Test@233795b6]" started-at="2026-05-21T13:11:56 IST" name="Verify_search_functionality" finished-at="2026-05-21T13:12:03 IST" duration-ms="6876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_search_functionality -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.client.projectName.SomkeTest.Serach_Module_Test@233795b6]" started-at="2026-05-21T13:12:03 IST" name="configAM" finished-at="2026-05-21T13:12:08 IST" duration-ms="5048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.client.projectName.SomkeTest.Serach_Module_Test@233795b6]" started-at="2026-05-21T13:12:08 IST" name="configAC" finished-at="2026-05-21T13:12:09 IST" duration-ms="715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.client.projectName.SomkeTest.Serach_Module_Test@233795b6]" started-at="2026-05-21T13:12:09 IST" name="configAS" finished-at="2026-05-21T13:12:09 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAS -->
+      </class> <!-- com.client.projectName.SomkeTest.Serach_Module_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
